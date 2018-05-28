@@ -1,0 +1,11 @@
+CREATE TABLE titulo_autor (
+  id_autor  Char(11) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  id_titulo Char(6) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  ord_au    Integer(11),
+  derechos  Integer(11), 
+  PRIMARY KEY (
+      id_autor, 
+      id_titulo
+  )
+) ENGINE=InnoDB ROW_FORMAT=DYNAMIC DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ALTER TABLE titulo_autor COMMENT = '';
